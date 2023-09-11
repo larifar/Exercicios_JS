@@ -1,4 +1,4 @@
-# Exercício Temperatura de Cidades
+# [Exercício Temperatura de Cidades](https://exercicios-lqbtbhptk-larifar.vercel.app)
 
 ## Descrição
 
@@ -19,5 +19,9 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 Ao desenvolver esta aplicação, adquiri conhecimento valioso sobre como integrar APIs externas (API de Geolocalização da Google e API Weatherbit) em um projeto web. Além disso, a experiência me permitiu compreender como manipular o Document Object Model (DOM) usando JavaScript para criar uma interface interativa e exibir dinamicamente os dados obtidos das APIs.
 
+## Como usar
+1. Abra o [site](https://exercicios-lqbtbhptk-larifar.vercel.app).
+2. Digite a cidade para verificar a temperatura.
+3. Aguarde e a aplicação logo devolve o nome da cidade e a temperatura atual.
 
 
