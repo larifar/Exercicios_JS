@@ -1,6 +1,9 @@
+const apiKeyGoogle = "AIzaSyAU9oBQGyn0rvHzY4OVdA0wi3tjC4MFA6o"
+const apiKeyWeather = "6c5be626536a4354986145a86ec392a8"
+
 function buscarCidade(){
     const endereco = document.getElementById('endereco').value;
-    const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(endereco)}&key=AIzaSyAU9oBQGyn0rvHzY4OVdA0wi3tjC4MFA6o`;
+    const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(endereco)}&key=${apiKeyGoogle}`;
 
     return fetch(url)
         .then(response => response.json())
@@ -22,7 +25,7 @@ function buscarCidade(){
 
 function encontrarTemperatura(coordenadas){
     if(coordenadas){
-        fetch(`https://api.weatherbit.io/v2.0/current?lat=${coordenadas.latitude}&lon=${coordenadas.longitude}&lang=pt&key=6c5be626536a4354986145a86ec392a8`)
+        fetch(`https://api.weatherbit.io/v2.0/current?lat=${coordenadas.latitude}&lon=${coordenadas.longitude}&lang=pt&key=${apiKeyWeather}`)
             .then(response => {
                 if (!response.ok) {
                 throw new Error("Erro na solicitação!");
